@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/user_email_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="User Email"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/change_email_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_signup_btn_bg"
+            android:textSize="20sp"
+            android:text="Create Account"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/change_password_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_signup_btn_bg"
+            android:textSize="20sp"
+            android:text="Change Password"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/removeuser_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_signup_btn_bg"
+            android:textSize="20sp"
+            android:text="Remove your Account"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/signout_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_signup_btn_bg"
+            android:textSize="20sp"
+            android:text="Sign Out"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

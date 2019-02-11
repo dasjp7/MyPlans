@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layoutinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Title"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/datepick"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter date"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/white"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/date_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_marginLeft="30dp"
+                android:text="Enter Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/timepick"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter time"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/white"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/time_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_marginLeft="30dp"
+                android:text="Enter time" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_layout"
+        android:layout_marginTop="5dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_add_btn"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+    <android.support.v7.widget.RecyclerView
+        android:padding="16dp"
+        android:id="@+id/listTodo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/fab_btn">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

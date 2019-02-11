@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity">
+    <RelativeLayout
+        android:id="@+id/todo_relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include layout="@layout/top_navigation_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/todo_relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/todo_relativelayout1">
+        <include layout="@layout/new_note"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_bottom_navigation_toolbar"/>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
